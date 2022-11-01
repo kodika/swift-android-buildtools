@@ -15,7 +15,7 @@ export PATH="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin:$PATH"
 
 export SWIFT_EXEC=$SWIFT_ANDROID_HOME/toolchain/usr/bin/swiftc
 export SWIFT_EXEC_MANIFEST=$xcode_toolchain/usr/bin/swiftc
-export SWIFTPM_PD_LIBS=$xcode_toolchain/usr/lib/swift/pm
+export SWIFTPM_PD_LIBS="/Library/Developer/Toolchains/swift-5.4.2-RELEASE.xctoolchain/usr/lib/swift/pm"
 
 if [ ! -n "${SWIFT_ANDROID_ARCH+defined}" ] || [ "$SWIFT_ANDROID_ARCH" == "aarch64" ]
 then
